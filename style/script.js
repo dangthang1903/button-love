@@ -11,15 +11,15 @@ nyanCat.addEventListener('touchstart', () => {
 });
 
 const messages = [
-  "Anh yêu em Uyên 💕", "Anh thương em Uyên 🤗", "I Love You Uyên 🥰", "Em thật xinh đẹp Uyên",
-  "Hạnh phúc nhé Uyên 💫", "❤️ Gửi yêu thương ❤️ Uyên", "Luôn mỉm cười nhé 😊 Uyên",
-  "Love You 3000 Uyên 💖", "Cảm ơn vì tất cả Uyên 🌸",
-  "Em là một món quà Uyên 🎁", "Trái tim này là của em Uyên 💘",
-  "Em làm thế giới này đẹp hơn Uyên 💐", "Love You In Every Universe Uyên",
-  "Em bé Uyên là duy nhất Uyên 💞", "Saranghaeyo❤️ Uyên",
-  "Anh nhớ em nhiều Uyên 🌈", "You Are My Everything Uyên 🫶",
-  "Yêu em không cần lý do Uyên 🏡", "Em là lý do anh luôn mỉm cười Uyên 😘",
-  "Anh yêu em vì em là chính em Uyên ✨"
+  "Anh yêu Sún 💕", "Anh thương Sún 🤗", "I Love Sún 🥰", "Sún xinh đẹp 😍",
+  "Hạnh phúc nhé 💫", "❤️ Gửi yêu thương ❤️", "Luôn mỉm cười nhé 😊",
+  "Love Sún iu 3000 💖", "Cảm ơn Sún vì tất cả 🌸",
+  "Sún là một món quà 🎁", "Trái tim này là của Sún 💘",
+  "Sún iu làm thế giới này đẹp hơn 💐", "Love You In Every Universe",
+  "Em bé là duy nhất 💞", "Saranghaeyo❤️",
+  "Anh nhớ Sún nhắm nhắm 🌈", "You Are My Everything 🫶",
+  "Yêu Sún không cần lý do 🏡", "Sún là lý do anh luôn mỉm cười nà 😘",
+  "Anh yêu Sún vì em là chính em ✨"
 ];
 
 function showRandomMessage(event) {
