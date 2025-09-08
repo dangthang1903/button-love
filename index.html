@@ -4,10 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <title>Love Uyn ^_^</title>
+  <!-- Cute favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>">
+  <title>💕 Love Uyn ^_^ 💕</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Cute Logo -->
+  <div class="cute-logo">
+    <div class="logo-container">
+      <span class="logo-heart">💖</span>
+      <span class="logo-text">Love Uyn</span>
+      <span class="logo-sparkle">✨</span>
+    </div>
+  </div>
+  
   <img src="https://i.pinimg.com/originals/ed/35/f8/ed35f861be81be2548e514085fb19385.gif" class="Nyan-Cat" id="nyan-cat" alt="Nyan Cat">
   <img src="style/cloud.png" alt="Cloud 1" class="floating-cloud-1">
   <img src="style/cloud.png" alt="Cloud 2" class="floating-cloud-2">
@@ -18,12 +29,58 @@
   <div class="key-button" onclick="showRandomMessage(event)">
     <span>❤️</span>
   </div>
+  
+  <!-- Love message under the heart -->
+  <div class="love-message">
+    💖 Gửi ngàn lời iu thưn tới em bé 💖
+  </div>
   <audio id="popsound">
     <source src="style/pop.mp3" type="audio/mpeg" />
   </audio>
   <audio id="meosound">
     <source src="style/meow.mp3" type="audio/mpeg" />
   </audio>
+  <audio id="backgroundmusic" loop>
+    <source src="music/Amee x Obito x Hứa Kim Tuyền  Shay Nắnggg Lyrics.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Music Player -->
+  <div class="music-player" id="musicPlayer">
+    <div class="player-header">
+      <div class="song-info">
+        <div class="song-title" id="songTitle">Shay Nắnggg</div>
+        <div class="song-artist" id="songArtist">AMEE x OBITO x HỨA KIM TUYỀN</div>
+      </div>
+      <div class="player-toggle" onclick="togglePlayer()">
+        <span id="playerToggleIcon">🎵</span>
+      </div>
+    </div>
+    
+    <div class="player-controls" id="playerControls">
+      <div class="control-buttons">
+        <button class="control-btn" onclick="previousSong()" title="Bài trước">⏮️</button>
+        <button class="control-btn play-pause-btn" onclick="togglePlayPause()" title="Play/Pause">
+          <span id="playPauseIcon">▶️</span>
+        </button>
+        <button class="control-btn" onclick="nextSong()" title="Bài tiếp">⏭️</button>
+        <button class="control-btn loop-btn" onclick="toggleLoop()" title="Lặp lại" id="loopBtn">🔁</button>
+      </div>
+      
+      <div class="progress-container">
+        <div class="progress-bar" onclick="setProgress(event)">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time-display">
+          <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+        </div>
+      </div>
+      
+      <div class="volume-control">
+        <span>🔊</span>
+        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30" oninput="setVolume(this.value)">
+      </div>
+    </div>
+  </div>
 
   <script src="style/script.js"></script>
 </body>
